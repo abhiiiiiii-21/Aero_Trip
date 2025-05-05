@@ -11,7 +11,7 @@ const App = () => {
   return (
     <Router>
       <Navbar tab={tab}/>
-      <div className="p-4">
+      <div className="">
         <Routes>
           <Route path="/" element={<Hero  setTab={setTab} />} />
           <Route path="/search" element={<SearchFlight  setTab={setTab} />} />

@@ -5,7 +5,7 @@ const About = ({setTab}) => {
         setTab("about")
     },[])
   return (
-    <div   >
+    <div>
       about
     </div>
   )
