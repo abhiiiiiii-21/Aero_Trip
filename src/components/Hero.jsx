@@ -1,10 +1,10 @@
 import React from 'react'
 import Navbar from './Navbar'
 
-const Hero = () => {
+const Hero = ({setTab}) => {
   return (
     <div>
-      <Navbar/>
+     
     </div>
   )
 }
