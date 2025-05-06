@@ -14,7 +14,7 @@ const Navbar = ({ tab }) => {
 
         <div className="flex space-x-8 text-gray-700 font-medium">
           <Link to="/" className={`hover:text-gray-500 ${tab === "home" ? "text-sky-500" : ""}`}>Home</Link>
-          <Link to="/search" className={`hover:text-gray-500 ${tab === "search" ? "text-sky-500" : ""}`}>Search Flight</Link>
+          <Link to="/search" className={`hover:text-gray-500 ${tab === "search" ? "text-sky-500" : ""}`}>Track Flight</Link>
           <Link to="/about" className={`hover:text-gray-500 ${tab === "about" ? "text-sky-500" : ""}`}>About</Link>
           <Link to="/contact" className={`hover:text-gray-500 ${tab === "contact" ? "text-sky-500" : ""}`}>Contact</Link>
         </div>
