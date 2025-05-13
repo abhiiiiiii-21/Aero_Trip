@@ -1,4 +1,3 @@
-import React from 'react';
 import { Plane } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from '@clerk/clerk-react';
