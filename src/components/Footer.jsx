@@ -3,7 +3,7 @@ import { Plane, MapPin, Phone, Mail, Facebook, Instagram, Twitter, Linkedin } fr
 const Footer = () => {
     return (
         <footer className='bg-[#1DA1F1] text-white pt-10 px-6'>
-            {/* Main Content */}
+
             <div className='max-w-7xl mx-auto flex flex-wrap gap-x-42 gap-y-8'>
 
                 <div className='max-w-xs space-y-2'>
@@ -22,7 +22,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* Quick Links */}
+
                 <div className='space-y-1 text-sm'>
                     <h2 className='text-xl font-semibold mb-2.5'>Quick Links</h2>
                     <p className='cursor-pointer hover:opacity-80'>Home</p>
@@ -32,7 +32,6 @@ const Footer = () => {
                     <p className='cursor-pointer hover:opacity-80'>Contact</p>
                 </div>
 
-                {/* Services */}
                 <div className='space-y-1 text-sm'>
                     <h2 className='text-xl font-semibold mb-2.5'>Our Services</h2>
                     <p className='cursor-pointer hover:opacity-80'>Flight Tracking</p>
@@ -41,7 +40,6 @@ const Footer = () => {
                     <p className='cursor-pointer hover:opacity-80'>Travel Updates</p>
                 </div>
 
-                {/* Contact Info */}
                 <div className='space-y-1 text-sm'>
                     <h2 className='text-xl font-semibold mb-2.5'>Contact Us</h2>
 
@@ -62,10 +60,8 @@ const Footer = () => {
                 </div>
             </div>
 
-            {/* Divider - Full Width */}
             <div className='w-full h-px bg-gray-700 mt-10'></div>
 
-            {/* Copyright */}
             <div className='text-center mt-6 pb-6'>
                 <p>© 2025 SkyTrack. All rights reserved.</p>
             </div>
