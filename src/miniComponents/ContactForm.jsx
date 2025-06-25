@@ -1,37 +1,59 @@
+import SendButton from "./Send";
 
 const ContactForm = () => {
     return (
-        <div>
-            <div className="w-[400px] bg-white rounded-2xl shadow-md p-6 border border-gray-300 mt-20">
+        <div className="flex justify-center px-4 py-10">
+            <div className="w-full max-w-2xl bg-white rounded-2xl p-8 shadow-md transition duration-300 hover:scale-[1.02] hover:shadow-xl">
+                <h2 className="text-3xl font-semibold text-gray-800 mb-6">Get in Touch</h2>
 
-                <h2 className="text-xl font-bold mb-6 text-center">Get in Touch</h2>
+                <div className="flex flex-wrap gap-4">
+                    <div className="w-full md:w-[48%]">
+                        <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                        <input
+                            type="text"
+                            placeholder="Abhishek Patel"
+                            className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                    </div>
 
-                <div className="mb-4">
-                    <label className="block mb-1 font-medium text-gray-700">Name</label>
-                    <input type="text" className="w-full px-3 py-2 bg-blue-100 border border-gray-300 rounded" placeholder="Enter your name" />
+                    <div className="w-full md:w-[48%]">
+                        <label className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                        <input
+                            type="email"
+                            placeholder="abhi2004@gmail.com"
+                            className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                    </div>
                 </div>
 
-                <div className="mb-4">
-                    <label className="block mb-1 font-medium text-gray-700">Email</label>
-                    <input type="email" className="w-full px-3 py-2 bg-blue-100 border border-gray-300 rounded" placeholder="Enter your email" />
+                <div className="mt-4">
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                    <select
+                        className="w-full border border-gray-300 rounded-lg p-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    >
+                        <option>Select a subject</option>
+                        <option>Flight Information</option>
+                        <option>Booking Issues</option>
+                        <option>Feedback</option>
+                        <option>Other</option>
+                    </select>
                 </div>
 
-                <div className="mb-4">
-                    <label className="block mb-1 font-medium text-gray-700">Subject</label>
-                    <input type="text" className="w-full px-3 py-2 bg-blue-100 border border-gray-300 rounded" placeholder="Subject" />
+                <div className="mt-4">
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                    <textarea
+                        rows="4"
+                        placeholder="How can we help you?"
+                        className="w-full border border-gray-300 rounded-lg p-2 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    ></textarea>
                 </div>
 
-                <div className="mb-6">
-                    <label className="block mb-1 font-medium text-gray-700">Message</label>
-                    <textarea rows="4" className="w-full px-3 py-2 bg-blue-100 border border-gray-300 rounded resize-none" placeholder="Write your message"></textarea>
+                <div className="mt-6">
+                    <SendButton/>
                 </div>
-
-                <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded">
-                    Send Message
-                </button>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ContactForm
+export default ContactForm;

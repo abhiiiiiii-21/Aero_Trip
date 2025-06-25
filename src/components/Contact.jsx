@@ -1,8 +1,7 @@
 import { useEffect } from 'react'
 import { Mail, Phone, MapPin } from 'lucide-react';
 import ContactForm from '../miniComponents/ContactForm';
-import FAQs from '../miniComponents/FAQs';
-import FAQ from '../miniComponents/FAQs';
+import Footer from './Footer';
 
 const Contact = ({ setTab }) => {
   useEffect(() => {
@@ -15,7 +14,7 @@ const Contact = ({ setTab }) => {
         <p className='text-xl text-gray-500'>Have questions, feedback, or need assistance? Our team is here to help. Reach out to us using any of the methods below.</p>
       </div>
 
-      <div className='bg-[#F7FAFC]'>
+      <div className='bg-[#F5FBFF]'>
         <div className="max-w-6xl mx-auto pt-20 flex flex-col md:flex-row justify-center items-center gap-6">
 
           <div className="bg-white rounded-2xl shadow-md p-6 w-full md:w-80 text-center transform transition duration-300 hover:scale-105 hover:shadow-lg">
@@ -54,15 +53,13 @@ const Contact = ({ setTab }) => {
           </div>
         </div>
 
-        <div className='flex'>
-          <ContactForm/>
-          <FAQs/>
-
-          <div></div>
+        <div className='flex bg-[#F5FBFF] justify-center items-center h-screen'>
+          <ContactForm />
         </div>
 
-
-
+        <div>
+          <Footer/>
+        </div>
       </div>
 
     </div>
