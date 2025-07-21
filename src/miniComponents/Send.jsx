@@ -1,5 +1,3 @@
-import React from 'react';
-
 const SendButton = () => {
   return (
     <>
@@ -8,7 +6,7 @@ const SendButton = () => {
           .send-button {
             font-family: inherit;
             font-size: 20px;
-            background: royalblue;
+            background: #1DA1F0;
             color: white;
             padding: 0.7em 1em;
             padding-left: 0.9em;

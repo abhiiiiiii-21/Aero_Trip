@@ -1,15 +1,12 @@
-import React, { useEffect } from 'react';
-
-const SearchFlight = ({ setTab }) => {
-  useEffect(() => {
-    setTab("search");
-  }, [setTab]);
-
+const SearchFlight = () => {
   return (
     <div>
-      Search Flight Content Goes Here
+      <div className="">
+        <h1>Flight Search</h1>
+        
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default SearchFlight;
+export default SearchFlight

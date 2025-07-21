@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Mail, Phone, MapPin } from 'lucide-react';
 import ContactForm from '../miniComponents/ContactForm';
 import Footer from './Footer';
+import FAQs from '../miniComponents/FAQs';
 
 const Contact = ({ setTab }) => {
   useEffect(() => {
@@ -53,12 +54,24 @@ const Contact = ({ setTab }) => {
           </div>
         </div>
 
-        <div className='flex bg-[#F5FBFF] justify-center items-center h-screen'>
+        <div className="flex flex-col lg:flex-row gap-10 justify-center px-4 py-15">
           <ContactForm />
+          <FAQs />
         </div>
 
-        <div>
-          <Footer/>
+        <div className="mt-5 mb-32 flex flex-col items-center text-center px-4">
+          <h3 className="text-3xl font-bold text-black mb-2">📍 Find Us</h3>
+          <p className="text-gray-600 max-w-xl mb-6">
+            Visit our headquarters located in the heart of <span className="font-medium text-black">Delhi</span>.
+          </p>
+          <div className="overflow-hidden rounded-2xl shadow-lg border border-black/10 w-full max-w-[1580px] h-[700px]">
+            <img src="./headquarter.png" alt="Headquarters" className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/>
+          </div>
+
+        </div>
+
+        <div >
+          <Footer />
         </div>
       </div>
 
