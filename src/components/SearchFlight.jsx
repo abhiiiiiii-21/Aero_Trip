@@ -11,6 +11,7 @@ import {
   Hourglass,
   RefreshCcw,
 } from 'lucide-react';
+import Footer from './Footer';
 
 const API_KEY = 'fe92c5357d4f4f99fb8ead38eb1c3098';
 
@@ -26,7 +27,7 @@ const SearchFlight = ({ setTab }) => {
 
     const fetchFlights = async () => {
       try {
-        const response = await fetch(`http://api.aviationstack.com/v1/flights?access_key=${API_KEY}`);
+        const response = await fetch(`https://api.aviationstack.com/v1/flights?access_key=${API_KEY}`);
         const data = await response.json();
         if (data && data.data) {
           setFlights(data.data);
@@ -249,6 +250,10 @@ const SearchFlight = ({ setTab }) => {
             })}
           </div>
         </div>
+
+      </div>
+        <div className='mt-20'> 
+        <Footer />
       </div>
     </div>
   );
