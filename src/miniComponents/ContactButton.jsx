@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const ContactButton = () => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     const style = document.createElement("style");
     style.innerHTML = `
@@ -79,8 +82,12 @@ const ContactButton = () => {
     };
   }, []);
 
+  const handleClick = () => {
+    navigate("/contact");
+  };
+
   return (
-    <button className="cta">
+    <button className="cta" onClick={handleClick}>
       <span>Contact Us&nbsp;</span>
       <svg viewBox="0 0 13 10" height="10px" width="15px">
         <path d="M1,5 L11,5"></path>

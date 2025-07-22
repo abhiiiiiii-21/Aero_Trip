@@ -42,17 +42,20 @@ const FAQs = () => {
   };
 
   return (
-    <div className="w-full max-w-3xl bg-white text-black p-8 rounded-2xl shadow-md transition duration-300 hover:scale-[1.02] hover:shadow-xl">
-      <h2 className="text-3xl font-semibold text-gray-800 mb-6">Frequently Asked Questions</h2>
+    <div className="group w-full max-w-3xl bg-white text-black p-4 sm:p-8 rounded-2xl border border-gray-200 shadow-md transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-2xl hover:border-blue-400 cursor-pointer px-2 sm:px-4">
+      <h2 className="text-3xl font-semibold text-gray-800 mb-6 group-hover:text-[#1DA1F1] transition-colors duration-300">
+        Frequently Asked Questions
+      </h2>
 
       {faqsData.map((faq, index) => (
         <div
           key={index}
-          className={`transition-all duration-300 ${index !== faqsData.length - 1 ? "border-b border-gray-300" : ""
-            }`}
+          className={`transition-all duration-300 ${
+            index !== faqsData.length - 1 ? "border-b border-gray-300" : ""
+          }`}
         >
           <button
-            className="flex justify-between items-center w-full text-left text-lg font-medium px-2 py-4 hover:bg-blue-50 transition-colors"
+            className="flex justify-between items-center w-full text-left text-base sm:text-lg font-medium px-2 py-4 hover:bg-blue-50 transition-colors"
             onClick={() => toggleFAQ(index)}
           >
             <span>{faq.question}</span>
@@ -64,10 +67,11 @@ const FAQs = () => {
           </button>
 
           <div
-            className={`overflow-hidden transition-all duration-300 px-2 ${openIndex === index
+            className={`overflow-hidden transition-all duration-300 px-2 ${
+              openIndex === index
                 ? "max-h-40 mt-1 opacity-100"
                 : "max-h-0 opacity-0"
-              }`}
+            }`}
           >
             <p className="text-gray-700">{faq.answer}</p>
           </div>
