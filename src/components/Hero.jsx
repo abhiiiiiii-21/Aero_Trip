@@ -6,9 +6,7 @@ const Hero = ({ setTab }) => {
 
   const navigate = useNavigate();
 
-  useEffect(() => {
-    setTab("home");
-  }, [setTab]);
+  useEffect(() => {setTab("home");}, [setTab]);
 
   const handleTrackFlight = () => {
     navigate('/search');

@@ -18,17 +18,15 @@ const Navbar = ({ tab }) => {
         </div>
 
         <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-6 lg:space-x-8 font-medium">
+
           {['home', 'search', 'about', 'contact'].map((item) => (
-            <Link
-              key={item}
-              to={item === 'home' ? '/' : `/${item}`}
-              className={`hover:text-sky-600 ${tab === item ? 'text-sky-600 font-semibold' : 'text-black'
-                }`}
-            >
+            <Link key={item} to={item === 'home' ? '/' : `/${item}`} className={`hover:text-sky-600 ${tab === item ? 'text-sky-600 font-semibold' : 'text-black' }`}>
               {item === 'search' ? 'Track Flight' : item.charAt(0).toUpperCase() + item.slice(1)}
             </Link>
           ))}
+
         </div>
+
 
         <div className="hidden md:flex items-center space-x-2">
           <SignedOut>
@@ -48,6 +46,7 @@ const Navbar = ({ tab }) => {
           <span className={`block h-0.5 w-6 bg-black rounded transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
         </button>
       </div>
+      
 
       {menuOpen && (
         <div className="md:hidden absolute top-20 left-0 w-full z-40 backdrop-blur-lg bg-white/80 border-t border-white/30 shadow-lg rounded-b-2xl text-black animate-fade-in px-4 pb-4 pt-2 space-y-3">
