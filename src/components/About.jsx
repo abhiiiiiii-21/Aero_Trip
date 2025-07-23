@@ -5,6 +5,7 @@ import { AnimatedTestimonialsDemo } from './Animatedtesti';
 import Footer from './Footer';
 
 
+
 const coreValues = [
   {
     icon: <Globe className="h-12 w-12 text-[#1da1f2] mb-4" />,
@@ -107,7 +108,7 @@ const About = ({ setTab }) => {
           </p>
         </div>
       </div>
-
+    
       <div>
         <Footer />
       </div>
