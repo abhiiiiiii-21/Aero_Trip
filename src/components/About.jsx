@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Globe, Target, Shield, TrendingUp } from 'lucide-react';
-import ContactButton from '../miniComponents/contactButton'
+import ContactButton from '../miniComponents/ContactButton'
 import { AnimatedTestimonialsDemo } from './Animatedtesti';
 import Footer from './Footer';
 
